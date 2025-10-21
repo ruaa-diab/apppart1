@@ -38,5 +38,12 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:text="@string/open_second_activity" />
+    <Button
+        android:id="@+id/bb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/open" />
 
 </LinearLayout>

@@ -16,6 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     private EditText editName,editCity;
     private Button button;
+    private Button button2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         editName=findViewById(R.id.t2);
         editCity=findViewById(R.id.t);
         button=findViewById(R.id.bb);
+        button2=findViewById(R.id.bb2);
+
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent =new Intent(MainActivity.this,MainActivity2.class);
                 intent.putExtra("name",name);
                 intent.putExtra("city",city);
+                startActivity(intent);
+
+            }
+        });
+
+
+
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View vv) {
+                Intent intent=new Intent(MainActivity.this,MainActivity3.class);
                 startActivity(intent);
 
             }
